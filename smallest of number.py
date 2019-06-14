@@ -1,13 +1,13 @@
-a,e=input().split()
-e=int(e)
+a,b=input().split()
+b=int(b)
 c=len(a)
 l=[]
 for i in range(0,c):
-	s=a[i]
-	l.append(s)
-w=c-e
+	k=a[i]
+	l.append(k)
+w=c-b
 l1=[]
-for i in range(e,c):
-	s=l[i]
-	l1.append(s)
+for i in range(b,c):
+	k=l[i]
+	l1.append(k)
 print("".join(l1))
