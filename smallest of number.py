@@ -1,13 +1,7 @@
-a,b=input().split()
-b=int(b)
-c=len(a)
-l=[]
-for i in range(0,c):
-	k=a[i]
-	l.append(k)
-w=c-b
-l1=[]
-for i in range(b,c):
-	k=l[i]
-	l1.append(k)
-print("".join(l1))
+from itertools import combinations
+string1,num1=map(int,input().split())
+n1=len(str(string1))
+L1=list(combinations(str(string1),n1-num1))
+L1=(sorted(L1))
+b1="".join(L1[0])
+print(b1)
